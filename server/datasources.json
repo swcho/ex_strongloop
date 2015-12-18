@@ -1,11 +1,6 @@
 {
-  "mysql": {
-    "host": "localhost",
-    "url": "",
-    "database": "codebeamer",
-    "password": "root",
-    "name": "mysql",
-    "connector": "memory",
-    "user": "root"
+  "db": {
+    "name": "db",
+    "connector": "memory"
   }
 }
