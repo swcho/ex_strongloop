@@ -59,19 +59,21 @@
     "$resolved": true
   },
   "OssLicense": {
-    "dataSource": "db",
+    "dataSource": "ossdb-mysql-local",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "OssPackage": {
-    "dataSource": "db",
+    "dataSource": "ossdb-mysql-local",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "OssProduct": {
-    "dataSource": "db",
-    "public": true
+    "dataSource": "ossdb-mysql-local",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }
