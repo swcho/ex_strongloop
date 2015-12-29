@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "ossdb-mysql-local": {
+    "host": "localhost",
+    "url": "",
+    "database": "ossdb2",
+    "password": "root",
+    "name": "ossdb-mysql-local",
+    "connector": "mysql",
+    "user": "root"
   }
 }

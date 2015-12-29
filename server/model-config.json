@@ -51,5 +51,27 @@
   "CbProject": {
     "dataSource": "db",
     "public": true
+  },
+  "OssProject": {
+    "dataSource": "ossdb-mysql-local",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OssLicense": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OssPackage": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OssProduct": {
+    "dataSource": "db",
+    "public": true
   }
 }

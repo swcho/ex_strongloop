@@ -1,16 +1,21 @@
 {
-  "name": "CbUser",
-  "base": "User",
-  "idInjection": true,
+  "name": "OssLicense",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "id": {
       "type": "string",
       "id": true
     },
-    "httpCredential": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "propertyName47": {
       "type": "string"
     }
   },
