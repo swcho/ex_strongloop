@@ -3,6 +3,20 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+// Passport configurators..
+var loopbackPassport = require('loopback-component-passport');
+var PassportConfigurator = loopbackPassport.PassportConfigurator;
+var passportConfigurator = new PassportConfigurator(app);
+
+//// attempt to build the providers/passport config
+//var config = {};
+//try {
+//    config = require('../providers.json');
+//} catch (err) {
+//    console.trace(err);
+//    process.exit(1); // fatal
+//}
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
