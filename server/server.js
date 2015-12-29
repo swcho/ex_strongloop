@@ -8,14 +8,22 @@ var loopbackPassport = require('loopback-component-passport');
 var PassportConfigurator = loopbackPassport.PassportConfigurator;
 var passportConfigurator = new PassportConfigurator(app);
 
-//// attempt to build the providers/passport config
-//var config = {};
-//try {
-//    config = require('../providers.json');
-//} catch (err) {
-//    console.trace(err);
-//    process.exit(1); // fatal
-//}
+// attempt to build the providers/passport config
+var config = {};
+try {
+    config = require('../providers.json');
+} catch (err) {
+    console.trace(err);
+    process.exit(1); // fatal
+}
+
+passportConfigurator.init();
+
+for (var s in config) {
+    var c = config[s];
+    c.session = c.session !== false;
+    passportConfigurator.configureProvider(s, c);
+}
 
 app.start = function() {
   // start the web server
