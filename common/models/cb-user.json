@@ -9,6 +9,9 @@
     "name": {
       "id": true,
       "type": "string"
+    },
+    "httpCredential": {
+      "type": "string"
     }
   },
   "validations": [],

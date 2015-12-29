@@ -47,5 +47,9 @@
   "CbUser": {
     "dataSource": "db",
     "public": true
+  },
+  "CbProject": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -59,10 +59,13 @@ module.exports = function(CbUser) {
             return fn.promise;
         }
 
-        request(config.baseUrl + '/rest/users/page/1?pagesize=1&filter=' + credentials.username, {
-            'auth': {
-                'user': credentials.username,
-                'pass': credentials.password
+        var httpCredential = 'Basic ' + new Buffer(credentials.username + ':' + credentials.password).toString('base64');
+
+        request({
+            method: 'GET',
+            uri: config.baseUrl + '/rest/users/page/1?pagesize=1&filter=' + credentials.username,
+            headers: {
+                'Authorization': httpCredential
             }
         }, function(err, ret) {
             if (err) {
@@ -73,7 +76,8 @@ module.exports = function(CbUser) {
                 self.create({
                     name: cbUser.name,
                     email: cbUser.email,
-                    password: credentials.password
+                    password: credentials.password,
+                    httpCredential: httpCredential
                 }, function(err, user) {
                     function tokenHandler(err, token) {
                         if (err) return fn(err);
