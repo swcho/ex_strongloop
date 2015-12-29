@@ -43,5 +43,9 @@
   "Reviewer": {
     "dataSource": "db",
     "public": true
+  },
+  "CbUser": {
+    "dataSource": "db",
+    "public": true
   }
 }
