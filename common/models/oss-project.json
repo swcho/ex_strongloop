@@ -12,7 +12,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "licenses": {
+      "type": "hasMany",
+      "model": "OssLicense"
+    }
+  },
   "acls": [],
   "methods": {}
 }

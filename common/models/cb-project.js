@@ -5,7 +5,6 @@ var config = require('./cb-user-config.json');
 
 module.exports = function(CbProject) {
 
-    console.log(CbProject);
     CbProject.ping = function(cb) {
         cb(null, 'test');
     };

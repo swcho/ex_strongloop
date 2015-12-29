@@ -12,7 +12,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "packages": {
+      "type": "hasAndBelongsToMany",
+      "model": "OssProduct"
+    }
+  },
   "acls": [],
   "methods": {}
 }

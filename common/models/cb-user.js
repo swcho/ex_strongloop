@@ -72,7 +72,6 @@ module.exports = function(CbUser) {
                 fn(err);
             } else if (ret && ret.body) {
                 var cbUser = JSON.parse(ret.body).users[0];
-                console.log(cbUser);
                 self.create({
                     name: cbUser.name,
                     email: cbUser.email,

@@ -14,9 +14,6 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "propertyName47": {
-      "type": "string"
     }
   },
   "validations": [],
