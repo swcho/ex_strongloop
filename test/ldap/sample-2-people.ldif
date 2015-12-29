@@ -1,0 +1,32 @@
+version: 1
+
+## ADD a single entry to people level
+
+dn: cn=John Smith,ou=people,dc=example,dc=com
+objectclass: inetOrgPerson
+cn: John Smith
+cn: John J Smith
+sn: Smith
+uid: jsmith
+userpassword: jSmitH
+carlicense: HISCAR 124
+homephone: 555-111-2223
+mail: j.smith@example.com
+mail: jsmith@example.com
+mail: john.smith@example.com
+ou: Sales
+
+## ADD another single entry to people level
+
+dn: cn=Sheri Smith,ou=people,dc=example,dc=com
+objectclass: inetOrgPerson
+cn: Sheri Smith
+sn: smith
+uid: ssmith
+userpassword: sSmitH
+carlicense: HERCAR 125
+homephone: 555-111-2225
+mail: s.smith@example.com
+mail: ssmith@example.com
+mail: sheri.smith@example.com
+ou: IT

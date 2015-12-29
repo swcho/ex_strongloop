@@ -1,0 +1,22 @@
+version: 1
+
+## MODIFY the Robert Smith entry
+
+dn: cn=Robert Smith,ou=people,dc=example,dc=com
+changetype: modify
+add: telephonenumber
+telephonenumber: 555-555-1212
+telephonenumber: 212
+-
+replace: uid
+uid: rjosmith
+-
+replace: mail
+mail: robert.smith@example.com
+mail: bob.smith@example.com
+-
+# adds using URL format
+add: jpegphoto
+jpegphoto: &lt; file://path/to/jpeg/file.jpg
+-
+delete: description
