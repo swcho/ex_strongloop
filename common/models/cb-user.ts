@@ -1,7 +1,7 @@
 
 /// <reference path="../../typings/tsd.d.ts"/>
 
-var request = require('request');
+import request = require('request');
 var debug = require('debug')('loopback:user');
 
 var cbConfig = require('./cb-user-config.json');
