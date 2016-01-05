@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "typings/**/*/*.ts",
+        "server/*.ts",
+        "common/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "typings/express/express.d.ts",
+        "typings/loopback/loopback.d.ts",
+        "typings/mime/mime.d.ts",
+        "typings/node/node.d.ts",
+        "typings/serve-static/serve-static.d.ts",
+        "server/server.ts",
+        "common/models/cb-user.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
